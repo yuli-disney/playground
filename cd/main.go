@@ -10,7 +10,7 @@ func main() {
     http.HandleFunc("/hello", func(w http.ResponseWriter, r *http.Request) {
 				v := r.URL.Query()
 				for _, vs := range v {
-						message := "Hello, " + vs[0] + "!"
+						message := "Hello, " + vs[0] + "-san!"
 						fmt.Fprintf(w, message)
 				}
     })
